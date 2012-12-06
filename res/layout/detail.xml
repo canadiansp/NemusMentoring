@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Name -->
+
+    <TextView
+        android:id="@+id/detail_label_name"
+        style="@style/detail_label"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/last_name"
+        style="@style/detail_edittext"
+        android:layout_toRightOf="@id/detail_label_name" />
+
+    <!-- Phone Number -->
+
+    <TextView
+        android:id="@+id/detail_label_phone"
+        style="@style/detail_label"
+        android:layout_below="@id/detail_label_name"
+        android:text="Phone" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        style="@style/detail_edittext"
+        android:layout_below="@id/last_name"
+        android:layout_toRightOf="@id/detail_label_phone" />
+
+    <!-- email -->
+
+    <TextView
+        android:id="@+id/detail_label_email"
+        android:layout_below="@+id/detail_label_phone"
+        style="@style/detail_label"
+        android:text="e-mail" />
+
+    <EditText
+        android:id="@+id/e_mail"
+        style="@style/detail_edittext"
+        android:layout_below="@id/phone_number"
+        android:layout_toRightOf="@id/detail_label_email" />
+
+    <!-- Address -->
+
+    <TextView
+        android:id="@+id/detail_label_address"
+        android:layout_below="@+id/detail_label_email"
+        style="@style/detail_label"
+        android:text="Address" />
+
+    <EditText
+        android:id="@+id/address"
+        style="@style/detail_edittext"
+        android:layout_below="@id/e_mail"
+        android:layout_toRightOf="@id/detail_label_address" />
+
+    <!-- Memo -->
+
+    <TextView
+        android:id="@+id/detail_label_memo"
+        android:layout_below="@id/detail_label_address"
+        style="@style/detail_label"
+        android:text="Memo" />
+
+    <EditText
+        android:id="@+id/memo"
+        style="@style/detail_edittext"
+        android:layout_below="@id/address"
+        android:layout_toRightOf="@id/detail_label_memo" />
+
+    <!-- Birthday -->
+
+    <TextView
+        android:id="@+id/detail_label_birth"
+        android:layout_below="@id/detail_label_memo"
+        style="@style/detail_label"
+        android:text="Birthday" />
+
+    <EditText
+        android:id="@+id/birthday"
+        style="@style/detail_edittext"
+        android:layout_below="@id/memo"
+        android:layout_toRightOf="@id/detail_label_birth" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birthday"
+        android:text="Done" />
+
+
+</RelativeLayout>

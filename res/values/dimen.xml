@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="detail_field_width">85dp</dimen>
+    <dimen name="detail_field_height" >35dp</dimen>
+
+</resources>
